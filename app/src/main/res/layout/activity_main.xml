@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/calc"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:text="@string/default_text"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/button_text"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/C"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="8dp"
+            android:backgroundTintMode="src_in"
+            android:onClick="onClearClick"
+            android:text="C"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Divide"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_margin="8dp"
+            android:onClick="onOperatorClick"
+            android:text="/"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button7"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="7"
+            android:onClick="onDigitClick"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button8"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="8"
+            android:onClick="onDigitClick"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button9"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="9"
+            android:onClick="onDigitClick"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/ButtonMinus"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onOperatorClick"
+            android:text="-"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button4"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onDigitClick"
+            android:text="4"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button5"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onDigitClick"
+            android:text="5"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button6"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onDigitClick"
+            android:text="6"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/ButtonMultiplication"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onOperatorClick"
+            android:text="*"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button1"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onDigitClick"
+            android:text="1"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button2"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onDigitClick"
+            android:text="2"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button3"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_margin="8dp"
+            android:onClick="onDigitClick"
+            android:text="3"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/ButtonPlus"
+            style="@style/calc"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:onClick="onOperatorClick"
+            android:text="+"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/ButtonEqual"
+            style="@style/calc"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="8dp"
+            android:onClick="onEqualsClick"
+            android:text="="
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/Button0"
+            style="@style/calc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onDigitClick"
+            android:text="0"
+            app:backgroundTint="@null" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

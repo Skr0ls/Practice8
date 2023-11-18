@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button">#363636</color>
+    <color name="button_text">#F3F3F3</color>
+    <color name="bg">#272727</color>
+</resources>

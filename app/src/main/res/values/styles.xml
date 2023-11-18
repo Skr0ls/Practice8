@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="calc" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/button</item>
+        <item name="android:textColor">@color/button_text</item>
+    </style>
+</resources>
